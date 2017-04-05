@@ -331,7 +331,7 @@ textarea, input, button { outline: none; }
 
 .main-head {
   position: relative;
-  background: url('/assets/back_girl1.jpg') center / cover;
+  background: url('assets/back_girl1.jpg') center / cover;
   margin-top: 120px;
 }
 .head-cont {
@@ -419,7 +419,7 @@ textarea, input, button { outline: none; }
 }
 @media screen and (max-width: 1000px) {
   .main-head {
-    background: url('/assets/back_girl3.jpg') center / cover;
+    background: url('assets/back_girl3.jpg') center / cover;
     margin-top: 0px;
   }
   .head-cont{
@@ -504,7 +504,7 @@ textarea, input, button { outline: none; }
 /* MAIN-WHYS -------------------------------------*/
 
 .main-whys {
-  background-image: url('/assets/back_para.jpg');
+  background-image: url('assets/back_para.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
