@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Mineko | Homepage</title>
+  <title>MINEKO | Homepage</title>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="index.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,77 +13,55 @@
     <div class="menu-main">
       <div class="main-menu-left">
         <i class="material-icons btn-bur">menu</i>
-        <img src="assets/logo_mineko.svg" routerLink="/" class="logo" title="Nebenkostenabrechnung prüfen lassen bei MINEKO" alt="Nebenkostenabrechnung prüfen lassen bei MINEKO">
+        <img src="assets/logo_MINEKO.svg" routerLink="/" class="logo" title="Nebenkostenabrechnung prüfen lassen bei MINEKO" alt="Nebenkostenabrechnung prüfen lassen bei MINEKO">
       </div>
       <div class="main-menu-space"></div>
       <div class="main-menu-right">
         <div class="main-menu-trust">
-          <span><a href="/about">Bekannt aus: </a></span>
-          <a href="http://www.gruenderszene.de/allgemein/mineko-schloer-nebenkosten" target="_blank"><img src="assets/press_drund.png" alt="press_drund"></a>
-          <a href="http://www.focus.de/immobilien/mieten/nebenkosten/fehlerquote-von-94-prozent-vorsicht-beim-umzug-so-zocken-vermieter-mit-den-nebenkosten-ab_id_5362785.html" target="_blank"><img src="assets/press_faznet.png" alt="press_faznet"></a>
-          <a href="http://www.faz.net/aktuell/beruf-chance/die-gruender/start-up-mineko-prueft-nebenkosten-fuer-mieter-14504715.html" target="_blank"><img src="assets/press_focus.png" alt="press_focus"></a>
+          <span><a href="/press">Bekannt aus: </a></span>
+          <a href="/press" target="_blank"><img src="assets/press_drund.png" alt="press_drund"></a>
+          <a href="/press" target="_blank"><img src="assets/press_faznet.png" alt="press_faznet"></a>
+          <a href="/press" target="_blank"><img src="assets/press_focus.png" alt="press_focus"></a>
         </div>
         <div class="main-menu-butt">
-
           <ul class="main-menu-link" [class.slideright]="slideright">
             <i class="material-icons btn-clo">close</i>
-
-            <!--<li class="buttmenu" *ngFor="let menu of menus | async">
-              <a class="btnmenu" routerLink="{{menu.menu.link}}">{{menu.menu.text}} <i class="material-icons">keyboard_arrow_down</i></a>
-              <ul class="submenu">
-                <nav class="arrow"><div class="tria"></div><div class="line"></div></nav>
-                <li><a href="https://www.mineko.de/nebenkostenabrechnung-pruefen-lassen/">Nebenkosten prüfen</a></li>
-                <li><a href="https://www.mineko.de/betriebskostenabrechnung-pruefen-lassen/">Betriebskosten prüfen</a></li>
-                <li><a href="https://www.mineko.de/widerspruch-nebenkostenabrechnung/">Widerspruch</a></li>
-                <li><a href="https://www.mineko.de/fristen-der-nebenkostenabrechnung/">Fristen</a></li>
-                <li><a href="https://www.mineko.de/widerspruch-heizkostenabrechnung/">Heizkostenabrechnung</a></li>
-                <li><a href="https://www.mineko.de/lexikon/">Lexikon</a></li>
-                <li><a href="https://www.mineko.de/betriebskostenspiegel/">Betriebskostenspiegel</a></li>
-                <li><a href="https://www.mineko.de/nebenkosten-pro-quadratmeter/">Nebenkosten pro m²</a></li>
-                <li><a href="https://www.mineko.de/nebenkosten-nach-staedten-und-laendern/">Nebenkosten lokal</a></li>
-              </ul>
-            </li>-->
-
             <li class="buttmenu">
-            <a class="btnmenu" href="https://www.mineko.de/ratgeber-mietnebenkostenabrechung/">Ratgeber Nebenkosten <i class="material-icons">keyboard_arrow_down</i></a>
+            <a class="btnmenu" href="https://www.MINEKO.de/ratgeber-mietnebenkostenabrechung/">Ratgeber Nebenkosten <i class="material-icons">keyboard_arrow_down</i></a>
             <ul class="submenu">
-              <nav class="arrow"><div class="tria"></div><div class="line"></div></nav>
-              <li><a href="https://www.mineko.de/nebenkostenabrechnung-pruefen-lassen/">Nebenkosten prüfen</a></li>
-              <li><a href="https://www.mineko.de/betriebskostenabrechnung-pruefen-lassen/">Betriebskosten prüfen</a></li>
-              <li><a href="https://www.mineko.de/widerspruch-nebenkostenabrechnung/">Widerspruch</a></li>
-              <li><a href="https://www.mineko.de/fristen-der-nebenkostenabrechnung/">Fristen</a></li>
-              <li><a href="https://www.mineko.de/widerspruch-heizkostenabrechnung/">Heizkostenabrechnung</a></li>
-              <li><a href="https://www.mineko.de/lexikon/">Lexikon</a></li>
-              <li><a href="https://www.mineko.de/betriebskostenspiegel/">Betriebskostenspiegel</a></li>
-              <li><a href="https://www.mineko.de/nebenkosten-pro-quadratmeter/">Nebenkosten pro m²</a></li>
-              <li><a href="https://www.mineko.de/nebenkosten-nach-staedten-und-laendern/">Nebenkosten lokal</a>
+              <li><a href="https://www.MINEKO.de/nebenkostenabrechnung-pruefen-lassen/">Nebenkosten prüfen</a></li>
+              <li><a href="https://www.MINEKO.de/betriebskostenabrechnung-pruefen-lassen/">Betriebskosten prüfen</a></li>
+              <li><a href="https://www.MINEKO.de/widerspruch-nebenkostenabrechnung/">Widerspruch</a></li>
+              <li><a href="https://www.MINEKO.de/fristen-der-nebenkostenabrechnung/">Fristen</a></li>
+              <li><a href="https://www.MINEKO.de/widerspruch-heizkostenabrechnung/">Heizkostenabrechnung</a></li>
+              <li><a href="https://www.MINEKO.de/lexikon/">Lexikon</a></li>
+              <li><a href="https://www.MINEKO.de/betriebskostenspiegel/">Betriebskostenspiegel</a></li>
+              <li><a href="https://www.MINEKO.de/nebenkosten-pro-quadratmeter/">Nebenkosten pro m²</a></li>
+              <li><a href="https://www.MINEKO.de/nebenkosten-nach-staedten-und-laendern/">Nebenkosten lokal</a>
               </li>
             </ul>
           </li>
             <li class="buttmenu">
               <a class="btnmenu" href="/leistungen">Leistungen <i class="material-icons">keyboard_arrow_down</i></a>
               <ul class="sub-menu">
-                <nav class="arrow"><div class="tria"></div><div class="line"></div></nav>
-                <li><a href="https://www.mineko.de/ueberblick/">Überblick</a></li>
-                <li><a href="https://www.mineko.de/leistungen/">Leistungen</a></li>
-                <li><a href="https://www.mineko.de/preise/">Unser Preis</a></li>
-                <li><a href="https://www.mineko.de/vergleich-mineko-mieterschutzbund-anwalt/">Leistungsvergleich</a></li>
+                <li><a href="https://www.MINEKO.de/ueberblick/">Überblick</a></li>
+                <li><a href="https://www.MINEKO.de/leistungen/">Leistungen</a></li>
+                <li><a href="https://www.MINEKO.de/preise/">Unser Preis</a></li>
+                <li><a href="https://www.MINEKO.de/vergleich-MINEKO-mieterschutzbund-anwalt/">Leistungsvergleich</a></li>
               </ul>
             </li>
             <li class="buttmenu">
-              <a class="btnmenu" href="https://www.mineko.de/ueber-uns/">Über uns <i class="material-icons">keyboard_arrow_down</i></a>
+              <a class="btnmenu" href="https://www.MINEKO.de/ueber-uns/">Über uns <i class="material-icons">keyboard_arrow_down</i></a>
               <ul class="sub-menu">
-                <nav class="arrow"><div class="tria"></div><div class="line"></div></nav>
-                <li><a href="https://www.mineko.de/pressebereich/">Pressebereich von MINEKO</a></li>
-                <li><a href="https://www.mineko.de/kontakt/">Kontakt</a></li>
-                <li><a href="https://www.mineko.de/haeufige-fragen/">Häufige Fragen</a></li>
-                <li><a href="https://www.mineko.de/unsere-experten/">Unsere Experten</a></li>
+                <li><a href="https://www.MINEKO.de/pressebereich/">Pressebereich von MINEKO</a></li>
+                <li><a href="https://www.MINEKO.de/kontakt/">Kontakt</a></li>
+                <li><a href="https://www.MINEKO.de/haeufige-fragen/">Häufige Fragen</a></li>
+                <li><a href="https://www.MINEKO.de/unsere-experten/">Unsere Experten</a></li>
               </ul>
             </li>
             <li class="buttmenu">
-              <a class="btnmenu" href="https://www.mineko.de/news/">News <i class="material-icons">keyboard_arrow_down</i></a>
+              <a class="btnmenu" href="https://www.MINEKO.de/news/">News <i class="material-icons">keyboard_arrow_down</i></a>
               <ul class="sub-menu">
-                <nav class="arrow"><div class="tria"></div><div class="line"></div></nav>
                 <li><a href="/grundsteuer-laesst-nebenkosten-steigen/">Grundsteuer</a></li>
                 <li><a href="/kosten-fuer-wasser-und-abwasser-bei-der-nebenkostenabrechnung/">Wasser und Abwasser</a></li>
                 <li><a href="/verteilerschluessel-der-nebenkostenabrechnung/">Verteilerschlüssel</a></li>
@@ -94,7 +72,6 @@
 
 
           </ul>
-
           <button class="main-menu-cta btn-cta" routerLink="/ticket">Jetzt prüfen lassen <span>&#187;</span></button>
         </div>
       </div>
@@ -112,6 +89,7 @@
             <li><i class="material-icons">check</i> 81 % aller Nebenkostenabrechnungen sind falsch!</li>
             <li><i class="material-icons">check</i> Nebenkostenabrechnungen sind im Schnitt <span class="nowrap">um € 221,- zu hoch</span></li>
             <li><i class="material-icons">check</i> Prüfung durch unsere Experten in nur 48 h</li>
+            <li><i class="material-icons">check</i> Prüfbericht incl. Widerspruchsschreiben für einmalig € 39,-</li>
           </ul>
           <button class="head-boxe-cta btn-cta" routerLink="/ticket">jetzt prüfen lassen <span>&#187;</span></button>
           <div class="head-box-trust">
@@ -158,13 +136,13 @@
     </div>
 
     <div class="main-whys">
-      <div class="whys-more">Mineko hat bereits 6.547 Nebenkostenabrechnungen geprüft.</div>
+      <div class="whys-more">MINEKO hat bereits 6.547 Nebenkostenabrechnungen geprüft.</div>
       <div class="whys-cont">
         <div class="whys-cta">
           <button class="btn-cta boom" routerLink="/ticket">Jetzt prüfen lassen <span>&#187;</span></button>
         </div>
         <div class="whys-text">
-          <h4>Über Mineko</h4>
+          <h4>Über MINEKO</h4>
           <div class="tito">Für viele Mieter sind die Aufstellung der Kostenpositionen</div>
           <div class="subo">und deren Umlagefähigkeit in ihren Nebenkostenabrechnungen unverständlich und somit wenig nachvollziehbar. Das führt dazu, dass Mieter oftmals zu hohe Voraus- oder Nachzahlungen in Kauf nehmen.</div>
           <div class="tito">Wir bringen Licht in den Nebenkostenschungel,</div>
@@ -177,7 +155,7 @@
 
     <div class="main-trut">
       <div class="trut-tito">
-        <h2 class="trut-tito-text">Was andere Kunden über Mineko sagen</h2>
+        <h2 class="trut-tito-text">Was andere Kunden über MINEKO sagen</h2>
         <div class="trut-boxe-star">
           <span class="trut-tito-perc">4.9 / 5</span>
           <i class="material-icons">star</i>
@@ -289,7 +267,7 @@
             </div>
             <div class="best-boxe-list-cont">
               <i class="material-icons add_circle">add_circle</i>
-              <span>Mineko funktioniert zu 100% digital<br>Hochladen und Kommunikation bequem von zu Hause aus</span>
+              <span>MINEKO funktioniert zu 100% digital<br>Hochladen und Kommunikation bequem von zu Hause aus</span>
             </div>
           </div>
           <button class="best-boxe-cta btn-cta" routerLink="/ticket">jetzt prüfen lassen <span>&#187;</span></button>
@@ -328,21 +306,21 @@
 
     <div class="main-pres">
       <div class="pres-boxe">
-        <a href="http://www.gruenderszene.de/allgemein/mineko-schloer-nebenkosten" target="_blank">
+        <a href="/press" target="_blank">
           <img src="assets/press_drund.png" alt="press_drund">
           <div class="text">"Dieses Startup achtet darauf, dass Eure Mietnebenkosten nicht zu hoch sind"</div>
         </a>
       </div>
       <div class="pres-boxe">
-        <a href="http://www.faz.net/aktuell/beruf-chance/die-gruender/start-up-mineko-prueft-nebenkosten-fuer-mieter-14504715.html" target="_blank">
+        <a href="/press" target="_blank">
           <img src="assets/press_faznet.png" alt="press_faznet">
-          <div class="text">"Auf der Grundlage der bisher gesichteten Abrechnungen schätzt Mineko, dass Mieter in Deutschland im Jahr etwa fünf Milliarden Euro an Nebenkosten zu viel zahlen."</div>
+          <div class="text">"Auf der Grundlage der bisher gesichteten Abrechnungen schätzt MINEKO, dass Mieter in Deutschland im Jahr etwa fünf Milliarden Euro an Nebenkosten zu viel zahlen."</div>
         </a>
       </div>
       <div class="pres-boxe">
-        <a href="http://www.focus.de/immobilien/mieten/nebenkosten/fehlerquote-von-94-prozent-vorsicht-beim-umzug-so-zocken-vermieter-mit-den-nebenkosten-ab_id_5362785.html" target="_blank">
+        <a href="/press" target="_blank">
         <img src="assets/press_focus.png" alt="press_focus">
-        <div class="text">"Die Auswertung von Mineko zeigt, dass vor allem die Abrechnungen nicht stimmen, bei denen der Mieter eine Immobilie kein komplettes Jahr bewohnt hat."</div>
+        <div class="text">"Die Auswertung von MINEKO zeigt, dass vor allem die Abrechnungen nicht stimmen, bei denen der Mieter eine Immobilie kein komplettes Jahr bewohnt hat."</div>
         </a>
       </div>
     </div>
@@ -350,7 +328,7 @@
     <div class="main-mobi">
       <div class="mobi-cont">
         <div class="mobi-phon">
-          <img src="assets/phone.png" alt="mineko_mobile">
+          <img src="assets/phone.png" alt="MINEKO_mobile">
         </div>
         <div class="mobi-info">
           <div class="mobi-info-tito">Mineko Mobile</div>
@@ -371,19 +349,6 @@
       <div class="news-cont">
         <div class="news-tito">News – Aktuelles, Fachwissen &amp; konkrete Tipps</div>
         <div class="news-subo">Informieren Sie sich zu den Themen Nebenkostenabrechnung und Heizkostenabrechnung. Unsere Experten erklären dieneuesten und bestehenden gesetzlichen Gegebenheiten und geben Ihnen hierzu hilfreiche Tipps.</div>
-        <div class="news-boxo" *ngFor="let new of news">
-          <div class="news-boxo">
-            <div class="news-boxo-imag">
-              <img src="assets/news1.png" alt="news1" (click)="goNews(new.slug)">
-              <div class="news-boxo-date">{{ new.date }}</div>
-            </div>
-            <div class="news-boxo-info">
-              <h2 (click)="goNews(new.slug)">{{ new.title.rendered }}</h2>
-              <p>Die Grundsteuer gehört zu den umlagefähigen Betriebskostenpositionen. Die Grundsteuer kann vom Finanzamt nachträglich erhöht werden und stellt deswegen eine Ausnahme zur Regelung der Abrechnungsfrist für…<br><br><img src="assets/share_news.png" alt=""></p>
-            </div>
-          </div>
-        </div>
-        <!--
         <div class="news-boxo">
           <a href="#" class="news-boxo">
             <div class="news-boxo-imag">
@@ -408,14 +373,25 @@
             </div>
           </a>
         </div>
-        -->
+        <div class="news-boxo">
+          <a href="#" class="news-boxo">
+            <div class="news-boxo-imag">
+              <img src="assets/news3.png" alt="news1">
+              <div class="news-boxo-date">21.042017</div>
+            </div>
+            <div class="news-boxo-info">
+              <h2>Grundsteuer kann rückwirkend auch noch nach Abrechnungsfrist abgerechnet werden.</h2>
+              <p>Die Grundsteuer gehört zu den umlagefähigen Betriebskostenpositionen. Die Grundsteuer kann vom Finanzamt nachträglicherhöht werden und stellt deswegen eine Ausnahme zur Regelung der Abrechnungsfrist für…<br><br><img src="assets/share_news.png" alt=""></p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
 
     <div class="main-iseo">
       <div class="iseo-cont">
         <div class="serve" [class.active]="viewmore1">
-          <h2>Mineko prüft Ihre Nebenkostenabrechnung</h2>
+          <h2>MINEKO prüft Ihre Nebenkostenabrechnung</h2>
           <p>Unser Firmenname<strong> MINEKO</strong> ist ein Akronym, das sich aus den Anfangssilben des Wortes <b>Mi</b>et<b>ne</b>ben<b>ko</b>sten zusammensetzt. Genau um die Abrechnung dieser Kosten, die jeder Mieter einmal jährlich erhält und die aufgrund ihrer stetig steigenden Höhe inzwischen auch unter dem Namen die „zweite Miete“ bekannt sind, dreht sich alles bei MINEKO. Hier können Sie Ihre Nebenkostenabrechnung prüfen lassen: Sie laden Ihre Abrechnung nebst Mietvertrag auf unserer Internetseite hoch und erhalten innerhalb von 48 Stunden Ihr Prüfergebnis.</p>
           <span class="showhide more" (click)="viewmore1=true">mehr lesen ⇣</span>
           <span class="showhide less" (click)="viewmore1=false">weniger lesen ⇡</span>
@@ -502,10 +478,10 @@
         <div class="foot-boxo-tito">FOLGEN SIE UNS</div>
         <div class="foot-boxo-info">
           <ul>
-            <a href="https://www.facebook.com/mineko.de/"><img src="assets/social_facebook.png" alt="Mineko Facebook"></a>
-            <a href="https://twitter.com/MINEKO_korrekt"><img src="assets/social_twitter.png" alt="Mineko Twitter"></a>
-            <a href="https://www.instagram.com/mineko_korrekt/"><img src="assets/social_instangram.png" alt="Mineko Instagramm"></a>
-            <a href="https://www.xing.com/companies/minekogmbh"><img src="assets/social_xing.png" alt="Mineko Xing"></a>
+            <a href="https://www.facebook.com/MINEKO.de/"><img src="assets/social_facebook.png" alt="MINEKO Facebook"></a>
+            <a href="https://twitter.com/MINEKO_korrekt"><img src="assets/social_twitter.png" alt="MINEKO Twitter"></a>
+            <a href="https://www.instagram.com/MINEKO_korrekt/"><img src="assets/social_instangram.png" alt="MINEKO Instagramm"></a>
+            <a href="https://www.xing.com/companies/MINEKOgmbh"><img src="assets/social_xing.png" alt="MINEKO Xing"></a>
           </ul>
         </div>
       </div>
@@ -516,7 +492,7 @@
           </div>
         </div>
     </div>
-    <div class="foot-subo">© 2017 Mineko GmbH. Alle Rechte vorbehalten. Made with love in Berlin.</div>
+    <div class="foot-subo">© 2017 MINEKO GmbH. Alle Rechte vorbehalten. Made with love in Berlin.</div>
   </div>
 
 </div>
