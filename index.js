@@ -1,7 +1,7 @@
 $(function() {
   
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 0) {
+      if ($(this).scrollTop() > 30) {
          $('.main-menu').addClass('stiky');
       } else {
          $('.main-menu').removeClass('stiky');

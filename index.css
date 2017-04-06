@@ -64,7 +64,7 @@ textarea, input, button { outline: none; }
   align-items: center;
   max-width: 1400px;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
   transition: all .5s;
 }
 .main-menu-left{
@@ -91,7 +91,8 @@ textarea, input, button { outline: none; }
 .main-menu-trust {
   text-align: right;
   color: gray;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   transition: all .5s;
   font-size: 13px;
 }
@@ -130,7 +131,7 @@ textarea, input, button { outline: none; }
 }
 .main-menu-link .buttmenu {
   position: relative;
-  margin-top: -6px;
+  margin-top: -12px;
 }
 .main-menu-link .btnmenu .material-icons {
   position: relative;
@@ -167,7 +168,7 @@ textarea, input, button { outline: none; }
     background-color: #fff;
     list-style: none;
     padding: 0;
-    padding-top: 34px;
+    padding-top: 25px;
     border-bottom: 1px solid silver;
     font-size: 16px;
     color: gray;
@@ -198,34 +199,6 @@ textarea, input, button { outline: none; }
   .main-menu-link li > ul li:hover a{
     color: white;
   }
-/*
-  .main-menu-link .arrow {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    font-size: 30px;
-    text-align: center;
-    color: #70b42b;
-  }
-  .main-menu-link .tria {
-    position: absolute;
-    left: 50%;
-    top: 23px;
-    margin-left: -15px;
-    width: 0; 
-    height: 0; 
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 12px solid #70b42b;
-    display: none;
-  }
-  .main-menu-link .line {
-    position: absolute;
-    top: 34px;
-    width: 100%;
-    border-bottom: 4px solid #70b42b;
-  }
-*/
   .main-menu-link .buttmenu:hover ul{
     visibility: inherit;
     animation-name: slideDown;
@@ -341,7 +314,7 @@ textarea, input, button { outline: none; }
 .main-head {
   position: relative;
   background: url('assets/back_girl1.jpg') center / cover;
-  margin-top: 120px;
+  margin-top: 105px;
 }
 .head-cont {
   max-width: 1400px;
@@ -688,8 +661,8 @@ textarea, input, button { outline: none; }
 .main-best{
   text-align: center;
   background-color: #e5e5e5;
-  padding-top: 20px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 .main-best-tito{
   font-size: 32px;
@@ -711,7 +684,6 @@ textarea, input, button { outline: none; }
   padding-right: 20px;
 }
 .best-boxe{
-  flex: 1;
   background-color: #fff;
   padding: 20px;
   padding-left: 40px;
@@ -721,13 +693,20 @@ textarea, input, button { outline: none; }
   border-top: 4px solid gray;
   border-left: 1px solid silver;
   border-bottom: 1px solid silver;
+  flex: 2;
 }
 .boxe-seco {
   border: 1px solid silver;
   border-top: 4px solid #70b42b;
   padding-top: 30px;
   padding-bottom: 30px;
-  min-width: 450px;
+  flex: 3;
+}
+.boxe-thir{
+  border-top: 4px solid gray;
+  border-right: 1px solid silver;
+  border-bottom: 1px solid silver;
+  flex: 2;
 }
 .boxe-seco .best-boxe-tito{
   color: #70b42b;
@@ -735,11 +714,7 @@ textarea, input, button { outline: none; }
 .boxe-seco .best-boxe-face img{
   height: 100px;
 }
-.boxe-thir{
-  border-top: 4px solid gray;
-  border-right: 1px solid silver;
-  border-bottom: 1px solid silver;
-}
+
 .best-boxe-tito{
   font-size: 30px;
 }
