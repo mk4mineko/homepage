@@ -21,12 +21,17 @@ $(function() {
     $('.main-menu-link').addClass('slideleft');
   });
   
-  $.urlParam = function(name){
-    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-    return results[1] || 0;
-  }
-  if($.urlParam('back')){
-    $('.main-head').css('background','url("assets/back/'+$.urlParam('back')+'.jpg") center / cover')
-  }
+//  $.urlParam = function(name){
+//    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+//    return results[1] || 0;
+//  }
+//  if($.urlParam('back')){
+//    $('.main-head').css('background','url("assets/back/'+$.urlParam('back')+'.jpg") center / cover')
+//  }
+  
+  
+//  $(".post-entry p:contains('[mineko_call_to_action]')").css( "display", "none" );
+//  $(".post-entry p:contains('[mineko_button style=“solid“]')").css( "display", "none" );
+//  $(".post-entry p:contains('[/mineko_call_to_action]')").css( "display", "none" );
   
 });

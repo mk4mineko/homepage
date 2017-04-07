@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
 <div class="myhomepage">
-  <div class="main-menu">
+ 
+  <div class="main-menu" [class.stiky]="navIsFixed">
     <div class="menu-main">
       <div class="main-menu-left">
         <i class="material-icons btn-bur">menu</i>
@@ -24,7 +26,7 @@
           <a href="/press" target="_blank"><img src="assets/press_focus.png" alt="press_focus"></a>
         </div>
         <div class="main-menu-butt">
-          <ul class="main-menu-link">
+          <ul class="main-menu-link" [class.slideright]="slideright">
             <i class="material-icons btn-clo">close</i>
             <li class="buttmenu">
             <a class="btnmenu" href="https://www.MINEKO.de/ratgeber-mietnebenkostenabrechung/">Ratgeber Nebenkosten <i class="material-icons">keyboard_arrow_down</i></a>
@@ -139,7 +141,7 @@
       <div class="whys-more">MINEKO hat bereits 6.547 Nebenkostenabrechnungen geprüft.</div>
       <div class="whys-cont">
         <div class="whys-cta">
-          <button class="btn-cta" routerLink="/ticket">Jetzt prüfen lassen <span>&#187;</span></button>
+          <button class="btn-cta boom" routerLink="/ticket">Jetzt prüfen lassen <span>&#187;</span></button>
         </div>
         <div class="whys-text">
           <h4>Über MINEKO</h4>
@@ -339,7 +341,7 @@
         <div class="mobi-atco-text">Prüfen Sie jetzt Ihre Abrechung von 2017 und holen Sie sich Ihr Geld zurück.</div>
         <div class="mobi-atco-butt">
           <div class="whys-cta">
-            <button class="btn-cta" routerLink="/ticket">jetzt prüfen lassen <span>&#187;</span></button>
+            <button class="btn-cta boom" routerLink="/ticket">jetzt prüfen lassen <span>&#187;</span></button>
           </div>
         </div>
       </div>
@@ -390,11 +392,11 @@
 
     <div class="main-iseo">
       <div class="iseo-cont">
-        <div class="serve">
+        <div class="serve" [class.active]="viewmore1">
           <h2>MINEKO prüft Ihre Nebenkostenabrechnung</h2>
           <p>Unser Firmenname<strong> MINEKO</strong> ist ein Akronym, das sich aus den Anfangssilben des Wortes <b>Mi</b>et<b>ne</b>ben<b>ko</b>sten zusammensetzt. Genau um die Abrechnung dieser Kosten, die jeder Mieter einmal jährlich erhält und die aufgrund ihrer stetig steigenden Höhe inzwischen auch unter dem Namen die „zweite Miete“ bekannt sind, dreht sich alles bei MINEKO. Hier können Sie Ihre Nebenkostenabrechnung prüfen lassen: Sie laden Ihre Abrechnung nebst Mietvertrag auf unserer Internetseite hoch und erhalten innerhalb von 48 Stunden Ihr Prüfergebnis.</p>
-          <span class="showhide more">mehr lesen ⇣</span>
-          <span class="showhide less">weniger lesen ⇡</span>
+          <span class="showhide more" (click)="viewmore1=true">mehr lesen ⇣</span>
+          <span class="showhide less" (click)="viewmore1=false">weniger lesen ⇡</span>
           <div class="showhide cont">
             <p>Es ist sehr wahrscheinlich, dass Sie durch eine Überprüfung Ihrer Nebenkostenabrechnung sparen: Während laut Angaben des Deutschen Mieterbunds etwa jede zweite Nebenkostenabrechnung zu hoch ist, liegt die Quote bei den Überprüfungen von MINEKO sogar noch weit über diesem Wert: Hier erweisen sich acht von zehn Abrechnungen als nicht korrekt – und dieser Umstand führt dazu, dass unsere Kunden sich über eine
               <strong>Rückzahlung</strong> in Höhe von
@@ -424,11 +426,11 @@
             </p>
           </div>
         </div>
-        <div class="serve">
+        <div class="serve" [class.active]="viewmore2">
           <h2>Gründe für einen Widerspruch gegen die Nebenkostenabrechnung</h2>
           <p>Wer schon einmal versucht hat, aus seiner Mietnebenkostenabrechnung schlau zu werden, ohne einen Experten zu Rate zu ziehen, der weiß, wie schwierig es für einen Laien ist, die Rechnungslegung zu verstehen und die einzelnen Posten auf ihre Stichhaltigkeit hin zu überprüfen. Die auf das Mietrecht spezialisierten Experten bei MINEKO prüfen sämtliche Posten Ihrer Nebenkostenabrechnung auf deren rechnerische und formelle Richtigkeit und teilen Ihnen innerhalb von 48 Stunden mit, ob Ihre Abrechnung Fehler enthält und Sie zu viel gezahlt haben.</p>
-          <span class="showhide more">mehr lesen ⇣</span>
-          <span class="showhide less">weniger lesen ⇡</span>
+          <span class="showhide more" (click)="viewmore2=true">mehr lesen ⇣</span>
+          <span class="showhide less" (click)="viewmore2=false">weniger lesen ⇡</span>
           <div class="showhide cont">
             <p>Generell gilt: Der Mieter ist nur zur Zahlung derjenigen Betriebskosten verpflichtet, die im Mietvertrag aufgeführt sind. Darüber hinaus dürfen Vermieter ihren Mietern nur solche Kosten in Rechnung stellen, die regelmäßig anfallen, wohingegen alle Einmalzahlungen oder Anschaffungen ebenso wenig umlagefähig sind wie die
               <strong>Bewirtschaftungskosten</strong>, die beispielsweise Aufwendungen für die Finanzierung oder Instandhaltung einer Immobilie umfassen. Eine weitere Fehlerquelle, die oft Grund für einen Widerspruch gegen die Betriebskostenabrechnung ist, ist der sogenannte <strong>Verteilerschlüssel</strong>. Dieser legt fest, wie die Nebenkosten für die ganze Immobilie auf die einzelnen Mieter verteilt werden (allzu oft vergessen Vermieter hier z. B., dass auch leer stehende Wohnungen berücksichtigt werden müssen). Und auch eine nicht fristgerechte Zustellung der Nebenkostenabrechnung kann zu deren Ungültigkeit führen.
