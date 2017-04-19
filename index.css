@@ -224,16 +224,12 @@ textarea, input, button { outline: none; }
   .main-menu-trust{
     display: none;
   }
-  .main-menu .logo{
-  }
   .main-menu-cta{
     display: none;
   }
   .menu-main{
     justify-content: center;
   }
-  
-  
   .main-menu .btn-clo{
     display: inherit;
     position: absolute;
@@ -241,7 +237,6 @@ textarea, input, button { outline: none; }
     top: 20px;
     cursor: pointer;
   }
-
   .main-menu-link {
     position: fixed;
     left: 0;
@@ -259,6 +254,7 @@ textarea, input, button { outline: none; }
     padding-top: 50px;
     padding-left: 50px;
     visibility: hidden;
+    overflow: auto;
   }
   .main-menu-link.slideright{
     visibility: inherit;
@@ -271,6 +267,21 @@ textarea, input, button { outline: none; }
     animation-name: slideLeft;
     animation-duration: .5s;	
     animation-timing-function: ease;	
+  }
+  
+  .main-menu-link .btnmenu{
+    margin: 0;
+    font-weight: bold;
+  }
+  .main-menu-link ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .main-menu-link ul li{
+    margin-bottom: 5px;
+    font-weight: normal;
   }
   
   @keyframes slideRight{
@@ -500,6 +511,9 @@ textarea, input, button { outline: none; }
   flex: 1;
   text-align: center;
 }
+.whys-cta button:hover {
+  color: white !important;
+}
 .whys-cta button{
   height: 50px;
   background-color: #70b42b;
@@ -615,6 +629,7 @@ textarea, input, button { outline: none; }
   margin-top: 40px;
   padding-top: 20px;
   border-top: 1px solid silver;
+  display: none;
 }
 .trut-scro .circle{
   height: 12px;
@@ -805,11 +820,15 @@ textarea, input, button { outline: none; }
   background-color: #efefef;
 }
 .mobi-cont{
+/*
   max-width: 1400px;
   margin: auto;
-  padding: 20px;
+*/
+/*  padding: 20px;*/
+/*
   padding-top: 40px;
   padding-bottom: 40px;
+*/
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -818,14 +837,17 @@ textarea, input, button { outline: none; }
   align-items: center;
 }
 .mobi-phon{
-  flex: 2;
+/*  flex: 3;*/
   text-align: center;
+/*
   padding-top: 60px;
   padding-bottom: 60px;
+*/
 }
 .mobi-phon img{
   width: 100%;
-  max-width: 600px;
+  max-width: 900px;
+  float: left;
 }
 .mobi-info{
   display: -webkit-flex;
@@ -833,9 +855,14 @@ textarea, input, button { outline: none; }
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: flex-end;
+/*  justify-content: flex-end;*/
   flex-direction: column;
   flex: 1;
+  justify-content: center;
+  padding-left: 200px;
+  white-space: nowrap;
+  padding-right: 40px;
+  zoom: 1.2;
 }
 .mobi-info-tito{
   font-size: 40px;
@@ -878,14 +905,22 @@ textarea, input, button { outline: none; }
   background-color: #fff;
   color: #70b42b;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
+  .mobi-info{
+    padding-left: 0px;
+    zoom: 1;
+  }
+}
+@media screen and (max-width: 1000px) {
   .mobi-cont{
     flex-direction: column;
   }
   .mobi-info{
     order: 1;
-    margin-top: 70px;
+    margin-top: 100px;
     margin-bottom: 40px;
+    text-align: center;
+    padding: 0;
   }
   .mobi-phon{
     order: 2;
