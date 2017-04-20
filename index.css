@@ -308,7 +308,7 @@ textarea, input, button { outline: none; }
 
 .main-head {
   position: relative;
-  background: url('assets/back_girl1.jpg') center / cover;
+  background: url('assets/back/01.jpg') center / cover;
   margin-top: 105px;
 }
 .head-cont {
