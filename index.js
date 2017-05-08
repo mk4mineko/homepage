@@ -3,8 +3,10 @@ $(function() {
   $(window).scroll(function () {
       if ($(this).scrollTop() > 30) {
          $('.main-menu').addClass('stiky');
+         $('.main-menu .logo').attr('src','assets/logo_mineko_small.svg');
       } else {
          $('.main-menu').removeClass('stiky');
+         $('.main-menu .logo').attr('src','assets/logo_mineko.svg');
       }
   });
   
